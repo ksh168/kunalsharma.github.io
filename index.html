@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="scss/reset.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,500,600,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    var count=1;
+      $(document).ready(function(){
+        $("#menubutton").click(function(){
+          $(".home").toggleClass("menu-active");
+          var cls = $("#menubutton").attr("class");
+          if(count%2==1){
+            $("#menubutton").removeClass(cls);
+            $("#menubutton").addClass("fa fa-times");
+            count++;
+          }
+          else{
+            $("#menubutton").removeClass(cls);
+            $("#menubutton").addClass("fa fa-bars");
+            count++;
+          }
+        });
+      });
+    </script>
+    <title></title>
+  </head>
+  <body class="home">
+    <div class="menu-icon">
+      <i id="menubutton" class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <section id="menu">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="KUNAL_CV.pdf">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </section>
+      <section class="info-section">
+        <div class="logo"><span>Kunal</span></div>
+        <div class="info-box">
+          <h4>Email</h4>
+          <p><a href="mailto:mailkunalsharma99@gmail.com?Subject=Hello%20Kunal" target="_top">mailkunalsharma99@gmail.com</a></p>
+          <h4>Phone</h4>
+          <p>(+91) 94629-68718/ 80056-81030</p>
+          <h4>Find Me On</h4>
+          <div class="icon-section">
+            <a href="https://linkedin.com/in/kunalsharma99/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://github.com/ksh168" alt="github"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </section>
+      <section class="content-area">
+        <div class="img-container">
+          <div class="user-img"></div>
+        </div>
+        <div class="profile-section">
+          <div class="profile">
+            <h1>Kunal<br><span>Sharma</span></h1>
+            <a href="KUNAL_CV.pdf" class="ghost-btn">Resume</a>
+            <a href="contact.html" class="ghost-btn">Contact</a>
+        </div>
+      </div>
+      </section>
+
+  </body>
+</html>
