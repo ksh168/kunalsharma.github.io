@@ -1,0 +1,109 @@
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-size: 18px;
+  background: #4b21ff;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.menu-icon {
+  position: fixed;
+  right: 31px;
+  top: 25px;
+  padding: 20px;
+  z-index: 11;
+}
+.menu-icon .fa {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #4b21ff;
+  transition: all 0.3s ease-in-out;
+}
+.menu-icon .fa:hover {
+  color: red;
+}
+.primary-btn {
+  margin-top: 1rem;
+  text-decoration: none;
+  border: 2px solid #4b21ff;
+  background: #4b21ff;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  text-align: center;
+  color: #fefefe;
+  padding: 13px 28px 15px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-right: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.primary-btn:hover {
+  border-color: #f00;
+  background: #f00;
+}
+.ghost-btn {
+  margin-top: 1rem;
+  text-decoration: none;
+  border: 2px solid #272727;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  text-align: center;
+  color: #272727;
+  font-weight: 500;
+  padding: 13px 28px 15px 28px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.ghost-btn:hover {
+  border-color: #f00;
+  color: #f00;
+}
+#menu {
+  background: #4b21ff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(-100%, 0, 0);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+#menu nav {
+  width: 400px;
+  text-align: center;
+}
+#menu nav a {
+  font-size: 2.3rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+#menu nav a:hover {
+  color: #a9a9a9;
+}
+.menu-active .menu-icon .fa {
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.menu-active .menu-icon .fa:hover {
+  color: red;
+}
+.menu-active #menu {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(0, 0, 0);
+}
