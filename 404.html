@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <script>
+        // This object should be kept in sync with src/config/navigation.js
+        const navigationLinks = [
+            { path: '/', label: 'Home' },
+            { path: '/education', label: 'Education' },
+            { path: '/publications', label: 'Publications' },
+            { path: '/experience', label: 'Experience' },
+            { path: '/projects', label: 'Projects' },
+            { path: '/contact', label: 'Contact' },
+        ];
+
+        const routes = {};
+        navigationLinks.forEach(link => {
+            if (link.path !== '/') {
+                routes[link.path] = `/index.html#${link.path}`;
+            }
+        });
+
+        // Get the current path
+        const path = window.location.pathname;
+
+        // Check if the path exists in our routes
+        if (routes.hasOwnProperty(path)) {
+            // Redirect to the correct page
+            window.location.href = routes[path];
+        } else {
+            // If the path is not in our routes, redirect to the home page
+            window.location.href = '/index.html';
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Page Not Found</h1>
+    <p>Redirecting...</p>
+</body>
+
+</html>
