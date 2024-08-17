@@ -1,0 +1,57 @@
+@import './common.css';
+
+.institution-logo {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.institution-name {
+  color: #3498db;
+  text-align: center;
+}
+
+.institution-name a:hover {
+  color: #2980b9;
+}
+
+.degree-major {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.education-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.education-left, .education-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-right {
+  text-align: right;
+}
+
+.list-item-details {
+  padding-left: 0;
+}
+
+.list-item-detail {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 8px;
+}
+
+.list-item-detail::before {
+  content: none;
+}
+
+.major {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}

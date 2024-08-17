@@ -1,0 +1,292 @@
+{
+    "home": {
+        "greeting": "Hello There!",
+        "description": "I am Kunal Sharma",
+        "changeText": [
+            "A software developer with passion for technology and innovation.",
+            "I have a knack for building web applications and services.",
+            "A quick learner and always ready to take on new challenges."
+        ],
+        "technicalSkills": {
+            "languages_frameworks": [
+                "Java",
+                "Spring Boot",
+                "TypeScript",
+                "JavaScript",
+                "NodeJS",
+                "NestJS",
+                "React",
+                "Python",
+                "FastAPI"
+            ],
+            "databases": [
+                "PostgreSQL",
+                "MySQL",
+                "MongoDB"
+            ],
+            "queues": [
+                "Kafka",
+                "SQS"
+            ],
+            "dataEngineering": [
+                "PySpark",
+                "Airflow"
+            ],
+            "logging": [
+                "OpenSearch",
+                "Cloudwatch"
+            ],
+            "cloudPlatforms": [
+                "AWS",
+                "Azure"
+            ],
+            "skillNameMapping": {
+                "languages_frameworks": "Languages & Frameworks",
+                "databases": "Databases",
+                "queues": "Queues",
+                "dataEngineering": "Data Engineering",
+                "logging": "Logging",
+                "cloudPlatforms": "Cloud Platforms"
+            }
+        },
+        "hobbies": [
+            "Star Gazing",
+            "Graphic Designing"
+        ]
+    },
+    "education": [
+        {
+            "institution": "National Institute of Technology Warangal (NITW)",
+            "institutionLink": "https://www.nitw.ac.in/",
+            "logoPath": "/logos/nitw.png",
+            "degree": "B.Tech",
+            "major": "Electrical and Electronics Engineering",
+            "duration": "July 2017 - July 2021",
+            "location": "Warangal, Telangana, India",
+            "activities": {
+                "Assistive Technology Team, Innovation Garage (IG)": [
+                    "Working on technology solutions for the **visually impaired (VI)**.",
+                    "Current Projects: Teaching **geometry** to VI kids, **Navigation system** for VI people."
+                ],
+                "Entrepreneurship Summit (E-Summit)": [
+                    "Associate, Design and Event Conduction & Coordination."
+                ],
+                "Entrepreneurship Cell (E-Cell)": [
+                    "Executive Member, Design and Event Conduction & Coordination."
+                ],
+                "Electrical Engineering Association (EEA)": [
+                    "Executive Member, Event conduction and coordination."
+                ],
+                "Technozion": [
+                    "Managed a techno-marketing event named **MAD MARKETING** at the annual technical fest of NIT Warangal.",
+                    "The event was the only management themed event in the whole fest. It witnessed a participation of **400+** students."
+                ],
+                "World Space Week": [
+                    "In association with **World Space Week Association (WSWA)** and **ISRO Satish Dhawan Space Centre** (SDSC), Sriharikota (SHAR).",
+                    "Event Coordination and Public Relations",
+                    "The event received a footfall of **15k** in 2 days. **80%** of them were school children"
+                ]
+            }
+        }
+    ],
+    "publications": [
+        {
+            "title": "HCH DEX: A Secure Cryptocurrency e-Wallet & Exchange System with Two-way Authentication",
+            "publisher": "IEEE, 2020 Third International Conference on Smart Systems and Inventive Technology (ICSSIT)",
+            "publisherUrl": "https://ieeexplore.ieee.org/document/9214122",
+            "publishedDate": "Oct. 2020",
+            "citations": 4,
+            "doi": "https://doi.org/10.1109/ICSSIT48917.2020.9214122",
+            "abstract": "Cryptocurrencies could potentially revolutionize the way our global economy functions. It presents us with enticing features that could give way to a secure and safe monetary transaction environment. Nonetheless, the present system provides a large room for improvement, and some could consider it merely a platform yet to be built upon. HCH DEX or Hot-Cold Hybrid Decentralized Exchange presents a method to locally store Cryptocurrency Wallet data in personal devices and process transactions between two personal devices without needing any common database or centralized server system to act as a broker or service provider; any licensed Local Broker can be used to facilitate a transaction in the Blockchain and register it in the distributed ledger. Additionally, the setup has been proposed that could be realized in the form of a smart card and could be designed to not be much thicker than the cards that are ubiquitous today. It is based on the conjunction of a secure two-way authentication system that enables robust handshaking mechanisms for e-Wallets and Lightweight DLT Nodes as local facilitators. It could arguably be a small step towards a fair and just economic system that is resistant to fraudulent and unethical policies and practices at different levels."
+        },
+        {
+            "title": "Smart Boarding System with ePassports for Secure and Independent Interoperability",
+            "publisher": "Springer Nature Computer Science. 3, 52 (2022)",
+            "publisherUrl": "https://link.springer.com/article/10.1007/s42979-021-00938-5",
+            "publishedDate": "Nov. 2021",
+            "citations": 0,
+            "doi": "https://doi.org/10.1007/s42979-021-00938-5",
+            "abstract": "Boarding, checking-in, immigration, etc. in air travel environments are time-sensitive and resource-sensitive processes. For a smooth and seamless experience, it is paramount for us to innovate and streamline the whole experience from start to end without compromising on security and safety. Various physical documents such as passports, printed tickets, physical rubber stamps, human-driven verification counters, etc. are resource-intensive processes in the sense that they consume additional human resources, and they largely slow down the passenger flow rates through the various gates and counters. In this work, we have proposed an electronic boarding system for e-Passports which may be a significant stride towards improving the existing setups. Presently used “smart systems” utilize Bar-code, QR Code or RFID chips as unique identifiers for the user details in a given database local to the software environment; this means the traditional smart system can be used for as long as the database is accessible, and beyond that, the same traditional smart system may not be useful. The proposed system possesses the ability to independently and bi-directionally communicate with the local “digital officers” that may be present at different gates or counters within completely disconnected environments using electronically activated passports with locally stored digital signatures and/or stamps. This allows different airports to utilize a common secure protocol, and have smarter, faster gates without the need of having shared databases. The system has been designed with interoperability and flexibility of architecture in scope so as to be easily adopted by any airport and to scale as needed."
+        }
+    ],
+    "experience": [
+        {
+            "company": "MediBuddy",
+            "logoPath": "/logos/mb.png",
+            "companyUrl": "https://www.medibuddy.in",
+            "role": "Software Development Engineer 1",
+            "team": "Payments & FinTech",
+            "duration": "April 2022 - Present",
+            "location": "Bengaluru, Karnataka, India",
+            "techStack": [
+                "NodeJS",
+                "TypeScript",
+                "Java",
+                "Sprint Boot",
+                "PostgreSQL",
+                "MySQL",
+                "Kafka",
+                "AWS",
+                "Python",
+                "Airflow"
+            ],
+            "tasks": [
+                "Unified the **end to end financial transactions flow**, giving visibility to business for an entire BU with **5 Cr/month revenue**. Used Kafka to capture order payload from multiple OMS and filtered using GraphQL, and pushed them to Athena with glue schema.",
+                "Single handedly designed & implemented a **JSON based custom request workflow system** for reimbursement claims process to onboard multiple corporate flows. This enabled the same code to be **reused** in multiple different flows.",
+                "Saved **6.3 Cr/policy year in fraud losses**, by designing & implementing fraud detection logic to flag counterfeit bill invoices uploaded for reimbursement claims process.",
+                "Extended fraud detection system to accept **feedback from adjudicator**, to increase accuracy of system, and create their own **custom rules** for each corporate flow.",
+                "Implemented Kafka queues, allowing operations to **automate & streamline insurance claims process**. This helped bring **3Cr/month as revenue**, while removing the need for manual process. Designed circuit breaker to handle external API failure.",
+                "Migrated MSSQL stored procedures to PySpark on EMR **reducing database cost and compute time**. Also removed the need for manual invoicing",
+                "Implemented wallet ledger feature that **increased conversions by 12%**.",
+                "Automated doctor payout **MIS reports generation**, that helped finance save time and resources"
+            ]
+        },
+        {
+            "company": "ACT Fibernet",
+            "companyUrl": "https://actcorp.in",
+            "logoPath": "/logos/act.svg",
+            "role": "Software Engineer (MT)",
+            "team": "Customer Analytics",
+            "duration": "June 2021 - April 2022",
+            "location": "Bengaluru, Karnataka, India",
+            "techStack": [
+                "NodeJS",
+                "JavaScript",
+                "Angular",
+                "PHP",
+                "MySQL",
+                "Java",
+                "Python"
+            ],
+            "tasks": [
+                "Part of **Technical Leadership Development Program (TLDP)**",
+                "Redesigned & Improved **CSAT score capturing platform** giving marketing and business leaders a visibility on **customer satisfaction score** at various touchpoints.",
+                "Designed and Implemented a custom self hosted **Customer App Analytics tool** to capture metrics like **user journey, friction points, user engagement, average session length** helping them better understand users.",
+                "Integrated **JWT based authentication**, for the retailer portal used by field sales team"
+            ]
+        },
+        {
+            "company": "Aufenbach",
+            "companyUrl": "https://aufenbach.com",
+            "logoPath": "/logos/ab.svg",
+            "role": "Intern",
+            "team": "Armateus",
+            "teamUrl": "https://aufenbach.com/projects/armatus/",
+            "duration": "Oct 2019 - Mar 2020",
+            "location": "Warangal, Telangana, India",
+            "techStack": [
+                "C",
+                "Arduino",
+                "Python",
+                "SQLite"
+            ],
+            "tasks": [
+                "Real-time Body Tracking for VR Applications",
+                "Developed a system through which user's physical activities are **tracked using wearable sensors**.",
+                "Users can **walk inside computer simulation** without any hand controls.",
+                "Worked on **design** of the system, **data acquisition** from sensors and conversion to useful format.",
+                "Was able to convert the work done here into **2 research papers** that were presented at various locations."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Custom URL Shortener - smolink",
+            "description": [
+                "Shortens URL upto length **512 characters** to **6 characters**",
+                "Able to redirect links and keep **stats on the number of visits**",
+                "Users can set their own **personalized URL**",
+                "Has **HTTP Basic Authentication** to view **stats**",
+                "Opened it up to the open-source community and received help from **6 generous contributors**"
+            ],
+            "sourceCode": "https://github.com/ksh168/smolink-url_shortener",
+            "demoVideo": "./demoVideos/smolink.mp4"
+        },
+        {
+            "title": "Flask Blog App",
+            "description": [
+                "A Web based **blogging application** using Flask.",
+                "The app facilitates **creating an account, log in, sign-up, and create/update/delete posts**.",
+                "Users can also **request password reset email, change account username, email, password, choose a custom profile picture**.",
+                "They can also view posts by individual user."
+            ],
+            "liveDemo": "https://flaskblog1.pythonanywhere.com",
+            "sourceCode": "https://github.com/ksh168/FlaskBlog",
+            "demoVideo": "./demoVideos/flaskblog.mp4"
+        },
+        {
+            "title": "Password Manager",
+            "description": [
+                "Browser based Password Manager made using **React, MySQL, NodeJS**.",
+                "Users can add their **username/email, password and website name** for which they want to save password.",
+                "Later when they click on the website name, it reveals their passwords.",
+                "Passwords are encrypted using **AES-256-CTR algorithm** and stored in MySQL database."
+            ],
+            "sourceCode": "https://github.com/ksh168/Password_Manager",
+            "demoVideo": "./demoVideos/passwordmanager.mp4"
+        },
+        {
+            "title": "Django Blog",
+            "description": [
+                "Blog website made using **Django** and deployed on **PythonAnywhere**, **sqlite3** is db",
+                "Users can:- **Register new account, create, update, delete posts**",
+                "Choose a **custom profile picture**, **View posts by individual user**",
+                "Change account username, email, password",
+                "Request **password reset** email"
+            ],
+            "liveDemo": "https://djangoblog0.pythonanywhere.com/",
+            "sourceCode": "https://github.com/ksh168/django_blog",
+            "demoVideo": "https://raw.githubusercontent.com/ksh168/django_blog/master/django_blog.png"
+        },
+        {
+            "title": "Sales Insights Data Analysis",
+            "description": [
+                "Interactive **PowerBI Dashboard** that can be used to analyse Sales Data.",
+                "Can see transactions per city, distinct products sold, revenue year/month/date wise, currency of transactions among other things.",
+                "Used: **MySQL**, **Microsoft PowerBI**."
+            ],
+            "sourceCode": "https://github.com/ksh168/Data-Visualization-and-Analysis/tree/master/Data%20Analysis%20using%20PowerBI",
+            "demoVideo": "./demoVideos/salesinsights.mp4"
+        },
+        {
+            "title": "Celebrity Face Recognition",
+            "description": [
+                "Dataset used **250+ images** in **5 categories** mined using **web scraping**.",
+                "Used: **SVC**, **Random Forest**, **Logistic Regression**, **OpenCV**, **Python**, **Flask**.",
+                "**End to end project** with **Web UI** where user can **drag and drop the image** to classify.",
+                "Successfully achieved an accuracy of **82%**."
+            ],
+            "sourceCode": "https://github.com/ksh168/Machine-Learning-projects/tree/master/CelebrityFaceRecognition",
+            "demoVideo": "https://raw.githubusercontent.com/ksh168/Machine-Learning-projects/master/CelebrityFaceRecognition/UIsnapshot.png"
+        },
+        {
+            "title": "Bengaluru Real Estate Price Prediction",
+            "description": [
+                "Dataset used consists of **13,000 records** with **8 independent features**.",
+                "Used: **LinearRegression**, **DecisionTreeRegressor**, **Python**, **Flask**.",
+                "**End to end project** along with **Web UI** where user can **input the features** and get an estimate price.",
+                "Successfully achieved an accuracy of **86%**."
+            ],
+            "sourceCode": "https://github.com/ksh168/Machine-Learning-projects/tree/master/Bengaluru%20real%20estate%20price%20prediction",
+            "demoVideo": "https://raw.githubusercontent.com/ksh168/Machine-Learning-projects/master/Bengaluru%20real%20estate%20price%20prediction/BHP_website.PNG"
+        },
+        {
+            "title": "Arduino Voice Controlled Bot",
+            "description": [
+                "L293D motor driver module, Bluetooth HC-05 module interfaced Google voice typing for voice recognition.",
+                "Bot is controlled via app."
+            ],
+            "sourceCode": "https://github.com/ksh168/Voice-controlled-Arduino-bot",
+            "demoVideo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/320px-Arduino_Logo.svg.png"
+        },
+        {
+            "title": "Arduino Gesture Controlled Bot",
+            "description": [
+                "Using MPU6050 module and radio transmitter-receiver modules interfaced.",
+                "Bot is controlled via app."
+            ],
+            "sourceCode": "https://github.com/ksh168/Gesture-Controlled-Arduino-Bot",
+            "demoVideo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/320px-Arduino_Logo.svg.png"
+        }
+    ]
+}
