@@ -28,6 +28,7 @@ header {
 .header-content {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   margin-bottom: 2rem;
 }
 
@@ -165,11 +166,19 @@ h3 {
 
   .header-content {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
   .avatar {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
     margin-right: 0;
     margin-bottom: 1rem;
+  }
+
+  .header-text {
+    width: 100%;
   }
 }

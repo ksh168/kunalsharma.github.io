@@ -1,20 +1,89 @@
-/* src/styles/Navbar.css */
 nav {
   background-color: #333;
   padding: 1rem;
+  position: relative;
 }
 
-ul {
+.nav-links {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-li {
+.nav-links li {
   margin: 0 1rem;
 }
 
-a {
+.nav-links a {
   color: white;
   text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: transparent;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0; /* Move the nav-links to the top */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem 0;
+    z-index: 99;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    top: 0.5rem; /* Adjust the top position of the hamburger */
+  }
+
+  .bar {
+    background-color: black;
+  }
+
+  .bar.open {
+    background-color: white;
+  }
+
+  .bar.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar.open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }
