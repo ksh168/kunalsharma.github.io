@@ -1,44 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html>
+  <head>
     <meta charset="utf-8">
-    <title>Page Not Found</title>
-    <script>
-        // This object should be kept in sync with src/config/navigation.js
-        const navigationLinks = [
-            { path: '/', label: 'Home' },
-            { path: '/education', label: 'Education' },
-            { path: '/publications', label: 'Publications' },
-            { path: '/experience', label: 'Experience' },
-            { path: '/projects', label: 'Projects' },
-            { path: '/contact', label: 'Contact' },
-        ];
+    <title>Kunal Sharma - Portfolio Website</title>
+    <script type="text/javascript">
+      // https://github.com/rafgraph/spa-github-pages
+      var pathSegmentsToKeep = 0;
 
-        const routes = {};
-        navigationLinks.forEach(link => {
-            if (link.path !== '/') {
-                routes[link.path] = `/index.html#${link.path}`;
-            }
-        });
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
 
-        // Get the current path
-        const path = window.location.pathname;
-
-        // Check if the path exists in our routes
-        if (routes.hasOwnProperty(path)) {
-            // Redirect to the correct page
-            window.location.href = routes[path];
-        } else {
-            // If the path is not in our routes, redirect to the home page
-            window.location.href = '/index.html';
-        }
     </script>
-</head>
-
-<body>
-    <h1>Page Not Found</h1>
-    <p>Redirecting...</p>
-</body>
-
+  </head>
+  <body>
+  </body>
 </html>
