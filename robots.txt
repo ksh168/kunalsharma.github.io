@@ -1,2 +1,3 @@
-User-agent: ia_archiver
-Disallow: /
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
