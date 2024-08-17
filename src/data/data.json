@@ -131,14 +131,15 @@
                 "Airflow"
             ],
             "tasks": [
-                "Unified the **end to end financial transactions flow**, giving visibility to business for an entire BU with **5 Cr/month revenue**. Used Kafka to capture order payload from multiple OMS and filtered using GraphQL, and pushed them to Athena with glue schema.",
+                "Unified the **end to end financial transactions flow**, giving visibility to business for an entire BU with **xx Cr/month revenue**. Used Kafka to capture order payload from multiple OMS and filtered using GraphQL, and pushed them to Athena with glue schema.",
                 "Single handedly designed & implemented a **JSON based custom request workflow system** for reimbursement claims process to onboard multiple corporate flows. This enabled the same code to be **reused** in multiple different flows.",
-                "Saved **6.3 Cr/policy year in fraud losses**, by designing & implementing fraud detection logic to flag counterfeit bill invoices uploaded for reimbursement claims process.",
+                "Saved **xCr/policy year in fraud losses**, by designing & implementing fraud detection logic to flag counterfeit bill invoices uploaded for reimbursement claims process.",
                 "Extended fraud detection system to accept **feedback from adjudicator**, to increase accuracy of system, and create their own **custom rules** for each corporate flow.",
-                "Implemented Kafka queues, allowing operations to **automate & streamline insurance claims process**. This helped bring **3Cr/month as revenue**, while removing the need for manual process. Designed circuit breaker to handle external API failure.",
+                "Implemented Kafka queues, allowing operations to **automate & streamline insurance claims process**. This helped bring **xCr/month as revenue**, while removing the need for manual process. Designed circuit breaker to handle external API failure.",
                 "Migrated MSSQL stored procedures to PySpark on EMR **reducing database cost and compute time**. Also removed the need for manual invoicing",
                 "Implemented wallet ledger feature that **increased conversions by 12%**.",
-                "Automated doctor payout **MIS reports generation**, that helped finance save time and resources"
+                "Automated doctor payout **MIS reports generation**, that helped finance save time and resources",
+                "*revenue numbers are confidential"
             ]
         },
         {
