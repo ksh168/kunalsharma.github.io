@@ -227,6 +227,17 @@
             "demoVideo": "./demoVideos/passwordmanager.mp4"
         },
         {
+            "title": "Inventory Management System",
+            "description": [
+                "A simple **inventory management system**.",
+                "Frontend is made using **HTML, CSS, JavaScript** and backend is made using **Python, Django, SQLite3**.",
+                "Users can **add new inventory items**, **update** existing ones, **delete** them and **view** all items.",
+                "**Admin page** available as well, where admin can add, update, delete items and view all items."
+            ],
+            "sourceCode": "https://github.com/ksh168/Inventory-django-project",
+            "demoVideo": "./demoVideos/inventorymanagement.mp4"
+        },
+        {
             "title": "Django Blog",
             "description": [
                 "Blog website made using **Django** and deployed on **PythonAnywhere**, **sqlite3** is db",
