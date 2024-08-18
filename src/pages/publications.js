@@ -30,11 +30,6 @@ function Publications() {
                             <strong>Citations:</strong> {pub.citations}
                         </p>
                     )}
-                    {pub.doi && (
-                        <p className="publication-doi">
-                            <strong>DOI:</strong> <a href={pub.doi} target="_blank" rel="noopener noreferrer">{pub.doi}</a>
-                        </p>
-                    )}
                     {pub.abstract && (
                         <p className="publication-abstract">
                             <strong>Abstract:</strong> {pub.abstract}
