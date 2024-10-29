@@ -89,7 +89,7 @@
             "publisher": "IEEE, 2020 Third International Conference on Smart Systems and Inventive Technology (ICSSIT)",
             "publisherUrl": "https://scholar.google.com/citations?view_op=view_citation&user=iGdBvvwAAAAJ&citation_for_view=iGdBvvwAAAAJ:u5HHmVD_uO8C",
             "publishedDate": "Oct. 2020",
-            "citations": 8,
+            "citations": 10,
             "doi": "https://doi.org/10.1109/ICSSIT48917.2020.9214122",
             "abstract": "Cryptocurrencies could potentially revolutionize the way our global economy functions. It presents us with enticing features that could give way to a secure and safe monetary transaction environment. Nonetheless, the present system provides a large room for improvement, and some could consider it merely a platform yet to be built upon. HCH DEX or Hot-Cold Hybrid Decentralized Exchange presents a method to locally store Cryptocurrency Wallet data in personal devices and process transactions between two personal devices without needing any common database or centralized server system to act as a broker or service provider; any licensed Local Broker can be used to facilitate a transaction in the Blockchain and register it in the distributed ledger. Additionally, the setup has been proposed that could be realized in the form of a smart card and could be designed to not be much thicker than the cards that are ubiquitous today. It is based on the conjunction of a secure two-way authentication system that enables robust handshaking mechanisms for e-Wallets and Lightweight DLT Nodes as local facilitators. It could arguably be a small step towards a fair and just economic system that is resistant to fraudulent and unethical policies and practices at different levels."
         },
