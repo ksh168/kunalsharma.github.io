@@ -15,6 +15,7 @@ const Contact = () => {
       </div>
       <div className="form-container">
         <iframe
+          title="Contact Form"
           src="https://docs.google.com/forms/d/e/1FAIpQLSf2usX4TWduOTGARhA25yPm441D2a5Y6yq5gF312HIvdrHGyA/viewform?embedded=true"
           width="640"
           height="800"

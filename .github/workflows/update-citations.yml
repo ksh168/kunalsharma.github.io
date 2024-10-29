@@ -37,7 +37,7 @@ jobs:
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update citation counts [skip ci]" && git push)
 
     - name: Build
-      run: npm run build
+      run: CI=false npm run build
     
     - name: Deploy to GitHub Pages
       run: |
