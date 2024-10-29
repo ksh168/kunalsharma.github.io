@@ -1,4 +1,4 @@
-name: Update Citation Counts
+name: Update Citation Counts and Deploy
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:      # Allows manual trigger
   
 jobs:
-  update-citations:
+  update-and-deploy:
     runs-on: ubuntu-latest
     
     steps:
@@ -21,7 +21,7 @@ jobs:
     
     - name: Install dependencies
       run: |
-        npm install axios cheerio
+        npm install
     
     - name: Update citations
       run: node scripts/update-citations.js
@@ -31,7 +31,17 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
     
-    - name: Commit and push if changed
+    - name: Commit citation updates
       run: |
         git add src/data/data.json
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update citation counts [skip ci]" && git push) 
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update citation counts [skip ci]" && git push)
+
+    - name: Build
+      run: npm run build
+    
+    - name: Deploy to GitHub Pages
+      run: |
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 

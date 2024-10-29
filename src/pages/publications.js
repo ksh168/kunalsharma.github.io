@@ -9,6 +9,14 @@ function Publications() {
         setPublications(data.publications);
     }, []);
 
+    const formatDate = (dateString) => {
+        if (!dateString) return '';
+        return new Date(dateString).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric'
+        });
+    };
     return (
         <div className="page-container animate-fade-in">
             <h1 className="page-title">Publications</h1>
@@ -28,6 +36,11 @@ function Publications() {
                     {pub.citations > 0 && (
                         <p className="publication-citations">
                             <strong>Citations:</strong> {pub.citations}
+                            {pub.lastUpdated && (
+                            <small className="text-muted">
+                                (Last updated: {formatDate(pub.lastUpdated)})
+                            </small>
+                        )}
                         </p>
                     )}
                     {pub.abstract && (

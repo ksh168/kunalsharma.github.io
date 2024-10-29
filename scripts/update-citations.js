@@ -14,9 +14,20 @@ async function fetchGoogleScholarCitations(url) {
             }
         });
         const $ = cheerio.load(response.data);
-        const citations = $('div.gs_ri div.gs_fl').text();
-        const citationCount = citations.match(/Cited by (\d+)/);
-        return citationCount ? parseInt(citationCount[1]) : null;
+        
+        // Using the XPath converted to CSS selector
+        // #gsc_oci_table > div:nth-child(7) > div.gsc_oci_value > div > a
+        const citationElement = $('#gsc_oci_table div.gsc_oci_value a').filter(function() {
+            return $(this).text().includes('Cited by');
+        });
+        
+        if (citationElement.length) {
+            const citationText = citationElement.text();
+            const citationCount = citationText.match(/Cited by (\d+)/);
+            return citationCount ? parseInt(citationCount[1]) : null;
+        }
+        
+        return null;
     } catch (error) {
         console.error(`Error fetching citations for ${url}:`, error.message);
         return null;
@@ -36,7 +47,7 @@ async function updateCitations() {
             pub.lastUpdated = new Date().toISOString();
         }
         // Add delay between requests
-        await delay(100000); // 100 seconds delay
+        await delay(10000); // 10 seconds delay
     }
     
     // Write updated data back to file
