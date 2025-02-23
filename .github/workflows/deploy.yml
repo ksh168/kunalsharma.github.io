@@ -1,0 +1,42 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+env:
+  GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Update index.html with Analytics
+        run: |
+          sed -i "s/{}/\"$GOOGLE_ANALYTICS_ID\"/g" public/index.html
+          sed -i "s/{}/\"$GOOGLE_ANALYTICS_ID\"/g" public/404.html
+
+      - name: Build
+        run: CI=false npm run build
+        
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
+          branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
