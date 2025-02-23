@@ -8,6 +8,14 @@ const Home = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
 
+  const iconMapping = {
+    'Spring Boot': 'spring',
+    'AWS': 'amazonwebservices',
+    'PySpark': 'apache',
+    'Airflow': 'apacheairflow',
+    'Kafka': 'apachekafka',
+  };
+
   useEffect(() => {
     const text = changeText[currentTextIndex];
     let timer;
@@ -59,7 +67,12 @@ const Home = () => {
                 <h3>{technicalSkills.skillNameMapping[category] || category}</h3>
                 <div className="skill-list">
                   {skills.map((skill, index) => (
-                    <span key={index} className="skill-item">{skill}</span>
+                    <span key={index} className="skill-item">
+                      {iconMapping[skill] !== null && (
+                        <i className={`devicon-${iconMapping[skill] || skill.toLowerCase()}-plain`}></i>
+                      )}
+                      {skill}
+                    </span>
                   ))}
                 </div>
               </div>
