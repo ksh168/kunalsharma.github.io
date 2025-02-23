@@ -17,13 +17,16 @@
         "React",
         "Python"
       ],
-      "databases": [
+      "databases_caches": [
         "PostgreSQL",
         "MySQL",
+        "DynamoDB",
+        "Redis",
         "MongoDB"
       ],
       "queues": [
         "Kafka",
+        "RabbitMQ",
         "SQS"
       ],
       "dataEngineering": [
@@ -34,13 +37,18 @@
         "AWS",
         "Azure"
       ],
+      "containers": [
+        "Docker",
+        "Kubernetes"
+      ],
       "skillNameMapping": {
         "languages_frameworks": "Languages & Frameworks",
-        "databases": "Databases",
+        "databases_caches": "Databases & Caches",
         "queues": "Queues",
         "dataEngineering": "Data Engineering",
         "logging": "Logging",
-        "cloudPlatforms": "Cloud Platforms"
+        "cloudPlatforms": "Cloud Platforms",
+        "containers": "Containers"
       }
     },
     "hobbies": [
